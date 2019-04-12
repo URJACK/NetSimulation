@@ -8,7 +8,7 @@ class SocketClient
 {
     private UdpClient udpClient;
     private const int localPort = 6602;
-    
+
     private string remoteIP = "127.0.0.1";
     private int remotePort = 6667;
 
@@ -50,6 +50,17 @@ class SocketClient
 
         byte[] sendData = Encoding.Default.GetBytes(message);
         udpClient.Send(sendData, sendData.Length);
+    }
+    public void Close()
+    {
         udpClient.Close();
+    }
+    public void setRemoteIp(string ip)
+    {
+        this.remoteIP = ip;
+    }
+    public void setRemotePort(int port)
+    {
+        this.remotePort = port;
     }
 }

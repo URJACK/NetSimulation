@@ -62,12 +62,16 @@
   <ItemGroup>
     <Compile Include="Assets\JSON\JSONObject.cs" />
     <Compile Include="Assets\JSON\VectorTemplates.cs" />
-    <Compile Include="Assets\Resources\Scripts\CodeRecorder.cs" />
     <Compile Include="Assets\Resources\Scripts\debugSend.cs" />
     <Compile Include="Assets\Resources\Scripts\EventBooter.cs" />
-    <Compile Include="Assets\Resources\Scripts\MailPoster.cs" />
-    <Compile Include="Assets\Resources\Scripts\SocketClient.cs" />
-    <Compile Include="Assets\Resources\Scripts\UDPServer.cs" />
+    <Compile Include="Assets\Resources\Scripts\network\CodeRecorder.cs" />
+    <Compile Include="Assets\Resources\Scripts\network\Handler\DeviceLayerHandler.cs" />
+    <Compile Include="Assets\Resources\Scripts\network\Handler\MailHanlder.cs" />
+    <Compile Include="Assets\Resources\Scripts\network\Handler\NodeLayerHanlder.cs" />
+    <Compile Include="Assets\Resources\Scripts\network\Handler\RunLayerHandler.cs" />
+    <Compile Include="Assets\Resources\Scripts\network\MailSender.cs" />
+    <Compile Include="Assets\Resources\Scripts\network\SocketClient.cs" />
+    <Compile Include="Assets\Resources\Scripts\network\UDPServer.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\JSON\readme.txt" />

@@ -1,9 +1,9 @@
-﻿public class MailPoster
+﻿public class MailSender
 {
     private string id;
     private string token;
-    private static MailPoster instance;
-    private MailPoster(){}
+    private static MailSender instance;
+    private MailSender(){}
 
     /* Private Package */
     private void NodeLayer(string name, out JSONObject jb)
@@ -19,7 +19,7 @@
         djb.AddField("name", name);
         njb.AddField("id", id);
         njb.AddField("token", token);
-        njb.AddField("devicedata", djb);
+        njb.AddField("updata", djb);
     }
     private void RunLayer(JSONObject njb, string name, out JSONObject rjb)
     {
@@ -28,7 +28,7 @@
         rjb.AddField("name", name);
         njb.AddField("id", id);
         njb.AddField("token", token);
-        njb.AddField("devicedata", rjb);
+        njb.AddField("updata", rjb);
     }
     
     /* Layer:node */
@@ -169,11 +169,11 @@
     }
 
     /* Setting Interface */
-    public static MailPoster GetInstance()
+    public static MailSender GetInstance()
     {
         if(instance == null)
         {
-            instance = new MailPoster();
+            instance = new MailSender();
         }
         return instance;
     }

@@ -10,6 +10,7 @@ public class UDPServer : MonoBehaviour
     public string ipAddress = "127.0.0.1";
     public int ConnectPort = 6000;
     public string recvStr;
+    private MailHanlder mailHanlder = MailHanlder.GetInstance();
 
     Socket socket;
     EndPoint clientEnd;
@@ -48,6 +49,7 @@ public class UDPServer : MonoBehaviour
             recvLen = socket.ReceiveFrom(recvData, ref clientEnd);
             recvStr = Encoding.UTF8.GetString(recvData, 0, recvLen);
             Debug.Log("收到得信息 " + recvStr);
+            mailHanlder.Handle(recvStr);
         }
     }
 
