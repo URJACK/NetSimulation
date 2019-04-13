@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\JSON\JSONObject.cs" />
     <Compile Include="Assets\JSON\VectorTemplates.cs" />
+    <Compile Include="Assets\Resources\AnimateObjects\boy\fire.cs" />
+    <Compile Include="Assets\Resources\Scripts\clickChecker.cs" />
     <Compile Include="Assets\Resources\Scripts\debugSend.cs" />
     <Compile Include="Assets\Resources\Scripts\EventBooter.cs" />
     <Compile Include="Assets\Resources\Scripts\network\CodeRecorder.cs" />

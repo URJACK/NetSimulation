@@ -97,7 +97,7 @@
     }
 
     /* Layer:device */
-    public JSONObject SetImuPhyPorts(int portsize) {
+    public JSONObject SetImuPhyPorts(float portsize) {
         JSONObject njb;
         NodeLayer("cdata",out njb);
         DeviceLayer(njb, "setimuphyports", out JSONObject djb);
@@ -129,7 +129,7 @@
     }
 
     /* Layer:run */
-    public JSONObject Link(string idA,string idB,int imuphyportA,int imuphyportB)
+    public JSONObject Link(string idA,string idB,float imuphyportA,float imuphyportB)
     {
         JSONObject njb;
         NodeLayer("cdata", out njb);
@@ -148,7 +148,7 @@
         rjb.AddField("code", code);
         return njb;
     }
-    public JSONObject UnLink(string idA, string idB, int imuphyportA, int imuphyportB)
+    public JSONObject UnLink(string idA, string idB, float imuphyportA, float imuphyportB)
     {
         JSONObject njb;
         NodeLayer("cdata", out njb);
