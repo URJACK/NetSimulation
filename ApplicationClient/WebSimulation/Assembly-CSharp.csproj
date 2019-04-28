@@ -64,6 +64,14 @@
     <Compile Include="Assets\JSON\VectorTemplates.cs" />
     <Compile Include="Assets\Resources\AnimateObjects\boy\fire.cs" />
     <Compile Include="Assets\Resources\Scripts\clickChecker.cs" />
+    <Compile Include="Assets\Resources\Scripts\compiler\Compiler.cs" />
+    <Compile Include="Assets\Resources\Scripts\compiler\CompilerBooter\CompilerBooter.cs" />
+    <Compile Include="Assets\Resources\Scripts\compiler\CompilerBooter\UserOfCompile.cs" />
+    <Compile Include="Assets\Resources\Scripts\compiler\CompilerSupport\CompilerInitial.cs" />
+    <Compile Include="Assets\Resources\Scripts\compiler\CompilerSupport\CompileWord.cs" />
+    <Compile Include="Assets\Resources\Scripts\compiler\CompilerSupport\ExceptionMessage.cs" />
+    <Compile Include="Assets\Resources\Scripts\compiler\CompilerSupport\TypeRecorder.cs" />
+    <Compile Include="Assets\Resources\Scripts\compiler\LexicalAnalyzer.cs" />
     <Compile Include="Assets\Resources\Scripts\debugSend.cs" />
     <Compile Include="Assets\Resources\Scripts\EventBooter.cs" />
     <Compile Include="Assets\Resources\Scripts\network\CodeRecorder.cs" />
